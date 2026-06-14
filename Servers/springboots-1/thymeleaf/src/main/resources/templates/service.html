@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> this are services provided yash and companies</h1>
+<footer th:replace="footer::footer-1"></footer>
+<!--  <footer id="hosttag" th:insert="footer::footer-1('This is title','This is substitle')"></footer>-->
+<footer id="hosttag" th:include="footer::footer-1"></footer>
+</body>
+</html>
