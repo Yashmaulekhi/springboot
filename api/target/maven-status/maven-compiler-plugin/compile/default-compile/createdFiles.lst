@@ -1,0 +1,8 @@
+com\api\book\api\entities\Author.class
+com\api\book\api\controller\FileUploadController.class
+com\api\book\api\entities\Book.class
+com\api\book\api\ApiApplication.class
+com\api\book\api\controller\BookController.class
+com\api\book\api\dao\BookRepository.class
+com\api\book\api\helper\FileUploadHelper.class
+com\api\book\api\services\bookservice.class
