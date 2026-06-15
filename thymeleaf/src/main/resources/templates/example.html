@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 th:text="${names}"></h1>
+<ul>
+<li th:each="n,status: ${names}">
+<span th:style="${status.odd}? 'font-weight:bold ':' '" th:text="${status.index}+' '+${n}"></span>
+
+</li>
+</ul>
+
+
+<!--  index: the current iteration index, starting with 0 (zero)
+count: the number of elements processed so far
+size: the total number of elements in the list
+even/odd: checks if the current iteration index is even or odd
+first: checks if the current iteration is the first one
+last: checks if the current iteration is the last one -->
+</body>
+</html>

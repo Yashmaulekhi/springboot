@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+    <h1>What's up</h1>
+    <h1>Vibe coding</h1>
+    
+    <!-- Display name as is -->
+    <h2 th:text="${name}"></h2>
+    
+    <!-- Convert to uppercase -->
+    <h2 th:text="${#strings.toUpperCase(name)}"></h2>
+    
+    <!-- Inline text with variable -->
+    <h2>Name of coder <span th:text="${name}"></span></h2>
+    
+    <!-- Using th:with to create local variables -->
+    <div th:with="a=5, b=45, n=${name}">
+        <h1 th:text="${a}"></h1>
+        <h1 th:text="${n}"></h1>
+        <h1 th:text="${b}"></h1>
+    </div>
+
+</body>
+</html>
